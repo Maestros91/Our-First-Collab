@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Here begins the Header */
+header{
+    background-color: #1f2937;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #f9faf8;
+}
+
+.logo span {
+    font-weight: lighter;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f9faf8;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #dad9c0;
+}
+
+.menu a span {
+    text-decoration: underline;
+}
