@@ -7,6 +7,15 @@
     font-variation-settings: "wdth" 100;
 }
 
+html, body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 a {
     all: unset;
     cursor: pointer;
@@ -57,4 +66,23 @@ header{
 
 .menu a span {
     text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#1f2937;
+    color: #f9faf8;
+    height: 70px;
+    font-size: 18px;
+    font-weight: lighter;
 }
