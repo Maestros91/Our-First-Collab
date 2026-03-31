@@ -70,9 +70,6 @@ header{
 
 /* Main Content */
 main {
-<<<<<<< Updated upstream
-    flex: 1;
-=======
     flex: 1; 
 }
 
@@ -104,7 +101,6 @@ main {
 }
 .main-hero-left h1 {
     
->>>>>>> Stashed changes
 }
 
 /* Footer */
