@@ -164,7 +164,7 @@ footer {
 }
 
 /* -------------CONTACT US PAGE--------------  */
-.contact-main {
+.contact-main { /* MAIN CONTAINER FOR WHOLE PAGE */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -172,12 +172,46 @@ footer {
     max-width: 800px;
     margin: 0 auto;
 }
+.contact-main h2 {
+    text-align: center;
+    text-decoration: underline;
+}
 
+.contact-main p {
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+/* BLUE FORM CONTAINER */
 .input-container {
-    background-color: ghostwhite;
+    background-color: #1f2937;
+    color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.input-container p {
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.input-container button {
+    width:fit-content;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.input-container button:hover {
+    background: #2a74eb;
 }
 
 /* CONTACT US - STYLING FOR MESSAGE FORM USER INPUT BLOCK ('row', 'input-group', 'input, textarea')*/
@@ -193,33 +227,12 @@ input, textarea {
   padding: 8px;
 }
 
-.contact-text {
-    font-size: 16px;
-    text-align: center;
-    color: #333;
-}
-
-.button{/* CONTACT PAGE - SEND BUTTON FORMATTING */
-    background-color:#3882F6;
-    color: #f9faf8;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
- .button:hover { /*HOVER FOR SEND BUTTON */
-    background-color:  #1f2937;
-}
 
 h1{
     text-align: center;
     text-decoration: underline;
 }
 
-h2{
-    text-align: center;
-    text-decoration: underline;
-}
 
 h3{
     text-align: center;
@@ -227,11 +240,6 @@ h3{
     text-decoration: underline;
 }
 
-.destination-img {/* IMAGE FORMATTING */
-    width: 280px;
-    height: 300px;
-    border-radius: 8px; /* ROUND BOARDERS */
-}
 .destination-grid {/* GRID FOR ALL DESTINATION CARDS */
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 1fr)); /* 4 COLUMNS WITH MINIMUM WIDTH OF 200px AND MAXIMUM OF 1FR */
@@ -245,8 +253,12 @@ h3{
     box-shadow: 1 10px 20px rgba(0, 0, 0, 0.1); /* SHADOW FOR 3D CARD EFFECT */
     text-align: center; /* CENTER TEXT WITHIN THE CARD BUT ONLY FOR THE CITY AND COUNTRY*/
 }
-
-.description {/* FORMATTING TEXT TO LOOK DIFFERENT TO CITY AND COUNTRY */
+.destination-card img {/* IMAGE FORMATTING */
+    width: 280px;
+    height: 300px;
+    border-radius: 8px; /* ROUND BOARDERS */
+}
+.destination-card p {/* FORMATTING TEXT TO LOOK DIFFERENT TO CITY AND COUNTRY */
     font-size: 16px;
     color: #333;
     text-align: justify;
