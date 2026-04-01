@@ -5,6 +5,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "width" 100;
+    box-sizing: border-box; /* ENSURES PADDING AND BORDER ARE INCLUDED IN THE ELEMENT'S TOTAL WIDTH AND HEIGHT */
 }
 
 html, body {
@@ -71,8 +72,7 @@ header{
 
 /* Main Content Landing Page*/
 main {
-    flex: 1; 
-    
+    flex: 1;     
 }
 
 .main-hero {
@@ -228,34 +228,32 @@ input, textarea {
   padding: 8px;
 }
 
-
 h1{
     text-align: center;
     text-decoration: underline;
 }
-
-
 h3{
     text-align: center;
     padding: 5px;
     text-decoration: underline;
 }
 
-.destination-grid {/* GRID FOR ALL DESTINATION CARDS */
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* 4 COLUMNS WITH MINIMUM WIDTH OF 200px AND MAXIMUM OF 1FR */
-    gap: 20px; /*GAP BETWEEN EACH CARD */
+.destination-box {/* GRID FOR ALL DESTINATION CARDS */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;      
     padding: 3px; /* SPACING AROUND THE GRID */
 }
 .destination-card {/* GREY CARD BOX AROUND EACH IMAGE AND TEXT */
     background-color: #F5F4F0;
+    flex: 0 0 calc((100% - 30px) / 4); /* 4 CARDS PER ROW WITH GAP */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 1 10px 20px rgba(0, 0, 0, 0.1); /* SHADOW FOR 3D CARD EFFECT */
     text-align: center; /* CENTER TEXT WITHIN THE CARD BUT ONLY FOR THE CITY AND COUNTRY*/
 }
 .destination-card img {/* IMAGE FORMATTING */
-    width: 280px;
+    width: 250px;
     height: 300px;
     border-radius: 8px; /* ROUND BOARDERS */
 }
@@ -263,7 +261,11 @@ h3{
     font-size: 16px;
     color: #333;
     text-align: justify;
-    padding: 10px;
+}
+
+.line { /* SUB-CONTAINER FOR PRICE AND DAYS */
+    display: flex;
+    justify-content: space-between;
 }
 
 .destination-price { /* PRICE FORMATTING */
@@ -271,8 +273,8 @@ h3{
     color: #3882F6;
     font-weight: bold;
 }
-
 .destination-days { /* DAYS FORMATTING */
     font-size: 14px;
     color: #333;
+    font-style: italic;
 }
