@@ -42,7 +42,7 @@ header{
 .logo {
     font-weight: bold;
     font-size: 24px;
-    text-decoration: underline;
+    
     color: #f9faf8;
 }
 
@@ -105,8 +105,8 @@ main {
     margin: 0;
     font-size: 48px;
     font-weight: bolder;
-    text-decoration: none;
     text-align: start;
+    text-decoration: none;
 }
 
 .main-hero-left p {
@@ -145,9 +145,70 @@ main {
     width: 80%;
     height: auto;
     border: 1px solid white;
-    border-radius: 12px;
+    border-radius: 12px;   
+}
+
+/* Here begins the Main hero Content */
+/*--------------------------------------*/
+/* Here begins the Special Offers Content */
+
+.main-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    
+}
+
+.random-info {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.random-info-heading {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.random-info-heading h2 {
+    align-items: center;
+    justify-content: center;
+   
+    font-weight: bolder;
+    font-size: 36px;  
+}
+
+.random-info-cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.destination-card button {
+    width:fit-content;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.destination-card button:hover {
+    background: #2a74eb;
 }
 
 /* Footer */
