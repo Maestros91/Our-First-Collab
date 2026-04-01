@@ -117,6 +117,7 @@ footer {
     padding: 20px;
 }
 
+/* -------------CONTACT US PAGE--------------  */
 .contact-main {
     display: flex;
     flex-direction: column;
@@ -130,29 +131,29 @@ footer {
     background-color: ghostwhite;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+/* CONTACT US - STYLING FOR MESSAGE FORM USER INPUT BLOCK ('row', 'input-group', 'input, textarea')*/
 .row {
   display: flex;
   gap: 20px; 
 }
-
 .input-group {
   flex: 1; 
 }
-
-.about-text {
-    font-size: 16px;
-    text-align: center;
-    color: #333;
-}
-
 input, textarea {
   width: 95%;
   padding: 8px;
 }
 
-.button{
+.contact-text {
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+
+.button{/* CONTACT PAGE - SEND BUTTON FORMATTING */
     background-color:#3882F6;
     color: #f9faf8;
     border: none;
@@ -160,8 +161,7 @@ input, textarea {
     border-radius: 4px;
     cursor: pointer;
 }
-
-.button:hover {
+ .button:hover { /*HOVER FOR SEND BUTTON */
     background-color:  #1f2937;
 }
 
@@ -181,41 +181,39 @@ h3{
     text-decoration: underline;
 }
 
-img {
+.destination-img {/* IMAGE FORMATTING */
     width: 280px;
     height: 300px;
-    border-radius: 8px;
+    border-radius: 8px; /* ROUND BOARDERS */
 }
-
-.destination-grid {
+.destination-grid {/* GRID FOR ALL DESTINATION CARDS */
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 3px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* 4 COLUMNS WITH MINIMUM WIDTH OF 200px AND MAXIMUM OF 1FR */
+    gap: 20px; /*GAP BETWEEN EACH CARD */
+    padding: 3px; /* SPACING AROUND THE GRID */
 }
-
-.destination-card {
-    background-color: ghostwhite;
+.destination-card {/* GREY CARD BOX AROUND EACH IMAGE AND TEXT */
+    background-color: #F5F4F0;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 1 10px 20px rgba(0, 0, 0, 0.1); /* SHADOW FOR 3D CARD EFFECT */
+    text-align: center; /* CENTER TEXT WITHIN THE CARD BUT ONLY FOR THE CITY AND COUNTRY*/
 }
 
-.description {
+.description {/* FORMATTING TEXT TO LOOK DIFFERENT TO CITY AND COUNTRY */
     font-size: 16px;
     color: #333;
     text-align: justify;
     padding: 10px;
 }
 
-.destination-price {
+.destination-price { /* PRICE FORMATTING */
     font-size: 18px;
     color: #3882F6;
     font-weight: bold;
 }
 
-.destination-days {
+.destination-days { /* DAYS FORMATTING */
     font-size: 14px;
     color: #333;
 }
