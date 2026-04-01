@@ -68,7 +68,7 @@ header{
     text-decoration: underline;
 }
 
-/* Main Content */
+/* Main Content Landing Page*/
 main {
     flex: 1; 
 }
@@ -78,28 +78,73 @@ main {
     background-color: #1f2937;
     justify-content: center;
     align-items: center;
-    height: 30%;
+    padding: 40px 0px 60px 0px;
 }
 
 .main-hero-container {
     display: flex;
-    width: 1200px;    
-    background-color: pink;
-    height: 100%;
-    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;    
+    padding: 0 40px;
     margin: 0 auto;
 }
 
 .main-hero-left {
     display: flex;
-    
     color: #f9faf8;
-    height: 100%;
-    background-color: aqua;
-    max-width: 50%;
-    
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
 }
 .main-hero-left h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: start;
+}
+
+.main-hero-left p {
+    margin: 0px;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #e5e7eb;
+}
+
+.main-hero-left button {
+    width:fit-content;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.main-hero-left button:hover {
+    background: #2a74eb;
+}
+
+.main-hero-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.main-hero-right img{
+    width: 80%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 12px;
+    
     
 }
 
