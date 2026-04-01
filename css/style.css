@@ -24,6 +24,7 @@ a {
 /* Here begins the Header */
 header{
     background-color: #1f2937;
+    border-bottom: 0.3px solid #c4ccff;
 }
 
 .container {
@@ -71,7 +72,7 @@ header{
 /* Main Content Landing Page*/
 main {
     flex: 1; 
-    border-top: 0.3px solid #c4ccff;
+    
 }
 
 .main-hero {
