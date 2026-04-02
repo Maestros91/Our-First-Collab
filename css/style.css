@@ -182,7 +182,7 @@ main {
 .random-info-heading h2 {
     align-items: center;
     justify-content: center;
-   
+    text-decoration: underline;
     font-weight: bolder;
     font-size: 36px;  
 }
@@ -215,6 +215,37 @@ main {
 /*--------------------------------------*/
 /* Here begins the Quote Content */
 .quote-landing-page {
+    display: flex;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    color: #1f2937;
+    max-width: 1000px;
+    gap: 20px;
+    padding: 80px;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.quote-landing-page-top {
+    width: 100%;
+    
+}
+
+.quote-landing-page-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*--------------------------------------*/
+/* Here begins the promo-boxes Content */
+.promo-boxes-landing-page {
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -226,7 +257,7 @@ main {
     margin-top: 40px;
 }
 
-.quote-card {
+.promo-boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,23 +272,62 @@ main {
     border-bottom: 0.3px solid #c4ccff;
 }
 
-.quote-card img {
+.promo-boxes img {
     max-width: 40%;
     margin-bottom: 30px;
     
 }
 
-.quote-card h4 {
+.promo-boxes h4 {
     max-width: 100%;
     text-align: center;
     font-size: 20px;
     border-bottom: 0.3px solid #c4ccff;
 }
 
-.quote-card p {
+.promo-boxes p {
     max-width: 100%;
     text-align: center;
     font-weight:300;
+}
+
+/*--------------------------------------*/
+/* Here begins the Call to Action Content */
+.call-to-action-landing-page {
+    max-width: 1000px;
+    display: flex;
+    background-color: #3882F6;
+    color: #f9faf8;
+    padding: 40px;
+    margin: 30px 0px 30px 0px;
+    border-radius: 5px;
+    gap: 60px;
+    align-items: center;
+}
+
+.call-to-action-landing-page-left :first-child {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.call-to-action-landing-page-left :last-child {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.call-to-action-landing-page-right a{
+    
+    border: 1px solid #f9faf8;
+    color: #f9faf8;
+    background-color:#3882F6;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+.call-to-action-landing-page-right a:hover {
+    background-color:#f9faf8;
+    color: #3882F6;
+    border: 1px solid #3882F6;
 }
 
 
@@ -388,4 +458,5 @@ h3{
     font-size: 14px;
     color: #333;
     font-style: italic;
+    font-weight: 300;
 }
