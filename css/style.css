@@ -22,6 +22,10 @@ a {
     cursor: pointer;
 }
 
+/*===========================================*/
+/* -------------LANDING PAGE--------------  */
+/*===========================================*/
+
 /* Here begins the Header */
 header{
     background-color: #1f2937;
@@ -72,9 +76,11 @@ header{
 
 /* Main Content Landing Page*/
 main {
-    flex: 1;     
+    flex: 1; 
+        
 }
 
+/* Here begins the Main hero Content */
 .main-hero {
     display: flex;
     background-color: #1f2937;
@@ -148,7 +154,6 @@ main {
     border-radius: 12px;   
 }
 
-/* Here begins the Main hero Content */
 /*--------------------------------------*/
 /* Here begins the Special Offers Content */
 
@@ -330,22 +335,125 @@ main {
     border: 1px solid #3882F6;
 }
 
+/*===========================================*/
+/* -------------ABOUT US PAGE--------------  */
+/*===========================================*/
 
-/* Footer */
-footer {
+.main-about-page {
     display: flex;
+    flex-direction: column;
+    max-width: 1200px;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    background-color:#1f2937;
-    color: #f9faf8;
-    height: 70px;
-    font-size: 18px;
-    font-weight: lighter;
-    padding: 20px;
+    gap: 40px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
 }
 
+/*----------about us TOP---------------*/
+.main-about-page-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;    
+    padding: 0 40px;
+    margin: 0 auto;
+    border-bottom: 0.3px solid #c4ccff;
+    padding-bottom: 40px;
+
+    background-color: #F5F4F0;
+    flex: 0 0 calc((100% - 30px) / 4);  
+    border-radius: 8px;
+    box-shadow: 1 10px 20px rgba(0, 0, 0, 0.1);  
+}
+
+.main-about-page-top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-about-page-top-left h2 {
+    text-decoration: underline;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.main-about-page-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.main-about-page-top-right img {
+    width: 80%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+/*----------about us BOTTOM---------------*/
+.main-about-page-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;    
+    padding: 0 40px;
+    margin: 0 auto;
+    border-bottom: 0.3px solid #c4ccff;
+    padding-bottom: 40px;
+
+    background-color: #F5F4F0;
+    flex: 0 0 calc((100% - 30px) / 4);  
+    border-radius: 8px;
+    box-shadow: 1 10px 20px rgba(0, 0, 0, 0.1);  
+}
+
+.main-about-page-bottom-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    
+}
+
+.main-about-page-bottom-right h2 {
+    text-decoration: underline;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.main-about-page-bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-about-page-bottom-left img {
+    width: 80%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+/*===========================================*/
 /* -------------CONTACT US PAGE--------------  */
+/*===========================================*/
+
 .contact-main { /* MAIN CONTAINER FOR WHOLE PAGE */
     display: flex;
     flex-direction: column;
@@ -459,4 +567,21 @@ h3{
     color: #333;
     font-style: italic;
     font-weight: 300;
+}
+
+/*===========================================*/
+/* -------------FOOTER--------------  */
+/*===========================================*/
+
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#1f2937;
+    color: #f9faf8;
+    height: 70px;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 20px;
 }
