@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
         rel="stylesheet">
     <link rel="stylesheet" 
-        href="css/style.css">
+        href="../css/style.css">
     <title>Tam.Ion</title>
 </head>
 <body>
@@ -20,19 +20,65 @@
     <!-- HEADER SECTION -->
     <header>
         <div class="container">
-            <div class="logo"><a href="#">Tam<span>.</span>Ion</a></div>
+            <div class="logo"><a href="../index.html">Tam<span>.</span>Ion</a></div>
             <nav class="menu">
-                <a href="pages/destination.html">Destinations</a>
-                <a href="pages/about.html">About</a>
-                <a href="pages/contact-us.html">Contact</a>
-                <a href="pages/sign-up.html"><span>Sign Up</span></a>
+                <a href="destination.html">Destinations</a>
+                <a href="about.html">About</a>
+                <a href="contact-us.html">Contact</a>
+                <a href="sign-up.html" class="active"><span>Sign Up</span></a>
             </nav>
         </div>
     </header>
 
     <!-- MAIN SECTION -->
     <main>
-        
+        <div class="sign-up-container">
+            <div class="input-container">
+                <h2>Sign Up!</h2>
+                <br>
+                <p>Create your Tamion account and start planning your next unforgettable journey with ease.</p>
+                <br>
+                <form action="#" method="post">
+                    <!-- FIRST NAME -->
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your Name" required>
+                    <br><br>
+                    <!-- LAST NAME -->
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your Last Name" required>
+                    <br><br>
+                    <!-- EMAIL -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <br><br>
+                    <!-- SEND BUTTON -->
+                    <button type="submit">Sign up!</button>
+                </form>
+            </div>
+            <div class="input-container">
+                <h2>Sign in!</h2>
+                <br>
+                <p>Welcome back! Sign in to continue exploring and managing your travel experiences with Tamion.</p>
+                <br>
+                <form action="#" method="post">
+                    <!-- FIRST NAME -->
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your Name" required>
+                    <br><br>
+                    <!-- LAST NAME -->
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your Last Name" required>
+                    <br><br>
+                    <!-- EMAIL -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <br>
+                    <br>
+                    <!-- SEND BUTTON -->
+                    <button type="submit">Sign in!</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER SECTION -->

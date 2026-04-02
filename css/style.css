@@ -22,6 +22,10 @@ a {
     cursor: pointer;
 }
 
+.active {
+    font-weight: bold;
+}
+
 /*===========================================*/
 /* -------------LANDING PAGE--------------  */
 /*===========================================*/
@@ -72,6 +76,7 @@ header{
 
 .menu a span {
     text-decoration: underline;
+    
 }
 
 /* Main Content Landing Page*/
@@ -567,6 +572,18 @@ h3{
     color: #333;
     font-style: italic;
     font-weight: 300;
+}
+
+/*===========================================*/
+/* -------------ABOUT US PAGE--------------  */
+/*===========================================*/
+
+.sign-up-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    gap: 40px;
 }
 
 /*===========================================*/
