@@ -468,10 +468,10 @@ main {
 
 .contact-main { /* MAIN CONTAINER FOR WHOLE PAGE */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
-    padding: 40px 20px;
-    max-width: 800px;
+    padding: 20px 20px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .contact-main h2 {
@@ -483,6 +483,7 @@ main {
     font-size: 16px;
     text-align: center;
     color: #000000;
+    line-height: 1.5;
 }
 
 /* BLUE FORM CONTAINER */
@@ -531,6 +532,13 @@ main {
 input, textarea {
   width: 100%;
   padding: 8px;
+}
+
+aside {
+    flex: 2;
+}
+section {
+    flex: 2;
 }
 
 h1{
@@ -751,5 +759,93 @@ footer {
     .sign-up-container {
         flex-direction: column;
         padding: 40px;
+    }
+}
+
+/* Media Query for 768px Contact Page */
+@media (max-width: 768px) {
+
+    .contact-main {
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    aside,
+    section {
+        flex: unset;
+        width: 100%;
+    }
+
+    .contact-main h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-main p {
+        font-size: 15px;
+    }
+
+    .input-container {
+        min-height: unset;
+    }
+}
+
+/* Media Query for 480px Contact Page */
+@media (max-width: 480px) {
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav.menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .contact-main {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .contact-main h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-main p {
+        font-size: 14px;
+    }
+
+    .input-container {
+        padding: 14px;
+    }
+
+    .input-container button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .back-to-top {
+        width: 36px;
+        height: 36px;
+    }
+
+    footer {
+        font-size: 13px;
+        text-align: center;
+        padding: 10px;
     }
 }
