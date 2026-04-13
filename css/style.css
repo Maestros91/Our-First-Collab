@@ -826,7 +826,13 @@ footer .container {
     
     .sign-up-container {
         flex-direction: column;
-        padding: 40px;
+        padding: 10px;
+        display: flex;
+    }
+
+    .sign-up-card {
+        padding: 10px;
+        gap: 0px;
     }
     #card-signup {
         border-right: none;
@@ -844,6 +850,7 @@ footer .container {
         padding: 16px;
         gap: 16px;
     }
+
 
     aside,
     section {
