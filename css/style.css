@@ -9,7 +9,7 @@
 }
 
 html, body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 html {
@@ -43,6 +43,7 @@ header{
 
 .container {
     display: flex;
+    width: 100%;
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +88,7 @@ header{
 /* Main Content Landing Page*/
 main {
     flex: 1; 
-        
+    min-height: calc(100vh - 140px);
 }
 
 /* Here begins the Main hero Content */
@@ -599,11 +600,13 @@ h3{
 
 .sign-up-container {
     display: flex;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     gap: 40px;
     padding: 40px;
     align-items: stretch;
+    min-height: calc(100vh - 140px);
 }
 .sign-up-card{
     background-color: #1f2937;
