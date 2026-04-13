@@ -84,6 +84,27 @@ nav {
     color: #dcf6f3;
 }
 
+/* ========= HAMBURGER =========== */
+.menu-checkbox {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 20;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #f9faf8;
+    transition: 0.3s;
+}
+
 /* Main Content Landing Page*/
 main {
     flex: 1; 
@@ -890,5 +911,51 @@ footer .container {
 
     .destination-days {
         font-size: 13px;
+    }
+}
+
+/* HAMBURGER MEDIA */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1f2937;
+        padding: 0;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+        border-bottom: none;
+    }
+
+    .menu a {
+        padding: 15px;
+        border-bottom: 0.1px solid #374151;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-checkbox:checked ~ .menu {
+        max-height: 300px; 
+        border-bottom: 1px solid #dcf6f3;
+    }
+
+    .menu-checkbox:checked ~ .hamburger span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-checkbox:checked ~ .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-checkbox:checked ~ .hamburger span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
