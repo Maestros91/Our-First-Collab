@@ -444,10 +444,33 @@ main {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding: 20px;
+    padding: 0;
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
+    align-items: stretch;
+    overflow: hidden; 
 }
+
+/* LEFT SIDE - WORDING */
+.contact-main section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* RIGHT SIDE - FORM */
+.contact-main aside {
+    flex: 1;
+    padding: 40px;
+}
+
+.contact-main aside form{
+    justify-content: center;
+}
+
 .contact-main h2 {
     text-align: center;
     text-decoration: underline;
@@ -578,6 +601,23 @@ h3{
     font-weight: 300;
 }
 
+.destination-card button {
+    width:fit-content;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.destination-card button:hover {
+    background: #2a74eb;
+}
+
 /*===========================================*/
 /* -------------SIGN UP PAGE--------------  */
 /*===========================================*/
@@ -587,7 +627,6 @@ h3{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 40px;
     padding: 40px;
     align-items: stretch;
     min-height: calc(100vh - 140px);
@@ -621,6 +660,10 @@ h3{
     margin-top: 20px;
 }
 
+#card-signup {
+    border-right: 1px solid #c4ccff;
+    padding-right: 40px;
+}
 .name-row {
     display: flex;
     gap: 20px;
@@ -754,6 +797,12 @@ footer .container {
         flex-direction: column;
         padding: 40px;
     }
+    #card-signup {
+        border-right: none;
+        border-bottom: 1px solid #c4ccff;
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
 }
 
 /* Media Query for 768px Contact Page */
@@ -769,6 +818,17 @@ footer .container {
     section {
         flex: unset;
         width: 100%;
+    }
+    
+    .contact-main {
+        flex-direction: column;
+        margin: 20px;
+        width: auto;
+    }
+
+    .contact-main section {
+        border-right: none;
+        border-bottom: 1px solid #c4ccff;  /* horizontal divider on mobile */
     }
 
     .contact-main h2 {
