@@ -15,46 +15,53 @@
         href="css/style.css">
     <title>Tam.Ion</title>
 </head>
+
 <body id="top">    
-    <!-- HEADER SECTION -->
+
+    <!-- HEADER -->
     <header>
         <div class="container">
-            <div class="logo"><a href="index.html">Tam<span>.</span>Ion</a></div>
-            <div class="menu">
+            <div class="logo">
+                <a href="index.html">Tam<span>.</span>Ion</a>
+            </div>
+            <nav class="menu">
                 <a href="pages/destination.html">Destinations</a>
                 <a href="pages/about.html">About</a>
                 <a href="pages/contact-us.html">Contact</a>
-                <a href="pages/sign-up.html"><span>Sign Up</span></a>
-            </div>
+                <a href="pages/sign-up.html">Sign Up</a>
+            </nav>
         </div>
     </header>
 
-    <!-- MAIN SECTION -->
+    <!-- MAIN -->
     <main>
-        <!-- THE BLUE PART OF THE WEBSITE -->
-        <div class="main-hero">
+        <!-- HERO SECTION -->
+        <section class="main-hero">
             <div class="main-hero-container">
-                <div class="main-hero-left">
+                <article class="main-hero-left">
                     <h1>Explore the world with Tam.Ion!</h1>
                     <p>Discover unique destinations and create unforgettable experiences with Tam.ion. We take care of every detail—so you can simply enjoy the journey.</p>
-                    <button><a href="./pages/sign-up.html">Sign Up!</a></button>
-                </div>
-                <div class="main-hero-right">
+                    <button>
+                        <a href="./pages/sign-up.html">Sign Up!</a>
+                    </button>
+                </article>
+
+                <figure class="main-hero-right">
                     <img src="images/airplane-landing-page.jpg" alt="">
-                </div>
+                </figure>
             </div>
-        </div>
-        <!-- THE REST OF THE PAGE EXCEPT FOOTER -->
-        <div class="main-section">
-            <!-- THE RANDOM INFO PART -->
-            <div class="random-info">
-                <div class="random-info-heading">
-                    <h2>
-                        Check our special offers!
-                    </h2>
-                </div>
-                <div class="random-info-cards">
-                    <div class="destination-card">
+        </section>
+
+        <!-- MAIN CONTENT -->
+        <section class="main-section">
+            <!-- OFFERS -->
+            <section class="random-info">
+                <header class="random-info-heading">
+                    <h2>Check our special offers!</h2>
+                </header>
+
+                <section class="random-info-cards">
+                    <article class="destination-card">
                         <img src="images/paris.jpg" alt="Paris">
                         <h3>Paris, France</h3>
                         <p>Experience the romance and culture of the City of Light.</p>
@@ -64,8 +71,9 @@
                             <span class="destination-price">$1,200</span>
                         </div>
                         <button><a href="pages/destination.html">Check It Out!</a></button>
-                    </div>
-                    <div class="destination-card">
+                    </article>
+
+                    <article class="destination-card">
                         <img src="images/tokyo.jpg" alt="Tokyo">
                         <h3>Tokyo, Japan</h3>
                         <p>Discover the blend of tradition and innovation in Tokyo.</p>
@@ -75,8 +83,9 @@
                             <span class="destination-price">$1,500</span>
                         </div>
                         <button><a href="pages/destination.html">Check It Out!</a></button>
-                    </div>
-                    <div class="destination-card">
+                    </article>
+
+                    <article class="destination-card">
                         <img src="images/newyork.jpg" alt="New York">
                         <h3>New York, USA</h3>
                         <p>Explore the vibrant energy of the Big Apple.</p>
@@ -86,8 +95,9 @@
                             <span class="destination-price">$2,000</span>
                         </div>
                         <button><a href="pages/destination.html">Check It Out!</a></button>
-                    </div>
-                    <div class="destination-card">
+                    </article>
+
+                    <article class="destination-card">
                         <img src="images/africa.jpg" alt="Africa">
                         <h3>Kenya, Africa</h3>
                         <p>Enjoy the stunning harbor and iconic landmarks of Kenya.</p>
@@ -97,43 +107,24 @@
                             <span class="destination-price">$1,500</span>
                         </div>
                         <button><a href="pages/destination.html">Check It Out!</a></button>
-                    </div>
-                </div>
-            </div>
-            <!-- THE QUOTE PART -->
-             <div class="quote-landing-page">
-                <div class="quote-landing-page-top">
+                    </article>
+
+                </section>
+            </section>
+
+            <!-- QUOTE -->
+            <section class="quote-landing-page">
+                <article class="quote-container">
+                    <blockquote class="quote-landing-page-top">
                     <p>"Don't talk about going to Borneo. Book a ticket, get a Visa, pack a bag, <span>and it just happens."</span></p>
-                </div>
-                <div class="quote-landing-page-bottom">
-                    <p>- Alex Garland. -</p>
-                </div>
-             </div>
-            <!-- THE PROMO BOXES PART -->
-             <div class="promo-boxes-landing-page">
-                <div class="promo-boxes">
-                    <img src="images/airplane.svg" alt="Airplane icon">
-                    <h4>Countless Destinations</h4>
-                    <p>Explore endless destinations around the world. From exotic islands to vibrant cities, we create journeys tailored to your travel dreams.</p>
-                </div>
-                <div class="promo-boxes">
-                    <img src="images/people.svg" alt="People icon">
-                    <h4>Skilled Staff</h4>
-                    <p>Our experienced team is here for you every step of the way. With passion and expertise, we ensure a smooth and enjoyable travel experience.</p>
-                </div>
-                <div class="promo-boxes">
-                    <img src="images/suitcase.svg" alt="Suitcase icon">
-                    <h4>Exclusive Offers</h4>
-                    <p>Take advantage of exclusive deals and unique travel packages. We bring you special offers you won't find anywhere else.</p>
-                </div>
-                <div class="promo-boxes">
-                    <img src="images/star.svg" alt="Star icon">
-                    <h4>High Rating</h4>
-                    <p>Our client's satisfaction speaks for itself. With top ratings and excellent reviews, we deliver quality service you can trust.</p>
-                </div>
-             </div>
-             <!-- THE CALL TO ACTION BOX PART -->
-             <div class="call-to-action-landing-page">
+                    </blockquote>
+                    <cite class="quote-landing-page-bottom">
+                        <p>- Alex Garland. -</p>
+                    </cite>
+                </article>
+            </section>
+            <!-- CALL TO ACTION -->
+            <section class="call-to-action-landing-page">
                 <div class="call-to-action-landing-page-left">
                     <p>Call to action! It's time!</p>
                     <p>Sign up to Tam.ion by clicking the button right over there!</p>
@@ -141,12 +132,16 @@
                 <div class="call-to-action-landing-page-right">
                     <a href="pages/sign-up.html">Sign-up!</a>
                 </div>
-             </div>
-        </div>
-        <a href="#top"><img src="images/top.png" class="back-to-top" alt="back to top button"></a> 
+            </section>
+        </section>
+
+        <a href="#top">
+            <img src="images/top.png" class="back-to-top" alt="back to top button">
+        </a> 
+
     </main>
 
-    <!-- FOOTER SECTION -->
+    <!-- FOOTER -->
     <footer>
         Copyright &copy; 2026 Tammy &amp; Ioannis.
     </footer>
