@@ -209,22 +209,7 @@ main {
 }
 
 
-.destination-card button {
-    width:fit-content;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    background: #3882f6;
-    color: #f9faf8;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
-}
 
-.destination-card button:hover {
-    background: #2a74eb;
-}
 
 /*--------------------------------------*/
 /* Here begins the Quote Content */
@@ -569,6 +554,12 @@ h3{
     text-align: center; /* CENTER TEXT WITHIN THE CARD BUT ONLY FOR THE CITY AND COUNTRY*/
     border-bottom: 0.3px solid #c4ccff;
 }
+
+.destination-card img:hover {
+    transform: translateY(-5px); /* LIFT EFFECT ON HOVER */
+    box-shadow: 1 15px 25px rgba(0, 0, 0, 0.2); /* ENHANCED SHADOW ON HOVER */
+}
+
 .destination-card img {/* IMAGE FORMATTING */
     width: 250px;
     height: 300px;
@@ -847,5 +838,74 @@ footer {
         font-size: 13px;
         text-align: center;
         padding: 10px;
+    }
+}
+
+/* Media Query for 768px Destination Page */
+@media (max-width: 768px) {
+
+    .destination-box {
+        padding: 0 16px;
+        gap: 16px;
+    }
+
+    .destination-card {
+        flex: 0 0 calc((100% - 16px) / 2); /* 2 CARDS PER ROW */
+    }
+
+    .destination-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .destination-card p {
+        font-size: 15px;
+    }
+
+    .destination-price {
+        font-size: 16px;
+    }
+
+    .destination-days {
+        font-size: 13px;
+    }
+}
+
+/* Media Query for 480px Destination Page */
+@media (max-width: 480px) {
+
+    .destination-box {
+        padding: 0 12px;
+        gap: 12px;
+    }
+
+    .destination-card {
+        flex: 0 0 100%; /* 1 CARD PER ROW */
+    }
+
+    .destination-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .destination-card p {
+        font-size: 14px;
+    }
+
+    .destination-price {
+        font-size: 16px;
+    }
+
+    .destination-days {
+        font-size: 13px;
     }
 }
