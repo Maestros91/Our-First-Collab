@@ -564,6 +564,7 @@ h3{
 .destination-card img:hover {
     transform: translateY(-5px); /* LIFT EFFECT ON HOVER */
     box-shadow: 1 15px 25px rgba(0, 0, 0, 0.2); /* ENHANCED SHADOW ON HOVER */
+    cursor: pointer;
 }
 
 .destination-card img {/* IMAGE FORMATTING */
@@ -619,6 +620,11 @@ h3{
     min-height: auto;
     width: 100%;
 }
+.sign-up-card h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
 .sign-up-card button {
     width:fit-content;
     padding: 12px 24px;
