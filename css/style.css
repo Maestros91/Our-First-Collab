@@ -529,7 +529,7 @@ main {
 }
 input, textarea {
   width: 100%;
-  padding: 0px;
+  padding: 10px;
 }
 
 aside {
