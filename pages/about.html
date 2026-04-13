@@ -15,11 +15,27 @@
         href="../css/style.css">
     <title>Tam.Ion</title>
 </head>
+
 <body id="top">    
-    <!-- HEADER SECTION -->
+
+    <!-- HEADER -->
     <header>
         <div class="container">
-            <div class="logo"><a href="../index.html">Tam<span>.</span>Ion</a></div>
+            <div class="logo">
+                <a href="../index.html">Tam<span>.</span>Ion</a>
+            </div>
+
+            <!-- HAMBURGER TOGGLE -->
+            <input type="checkbox" 
+                    id="menu-toggle" 
+                    class="menu-checkbox">
+            <label for="menu-toggle" 
+                    class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <nav class="menu">
                 <a href="destination.html">Destinations</a>
                 <a href="about.html" class="active">About</a>
@@ -29,32 +45,48 @@
         </div>
     </header>
 
-    <!-- MAIN SECTION -->
+    <!-- MAIN -->
     <main>
-        <div class="main-about-page">
-            <div class="main-about-page-top">
-                <div class="main-about-page-top-left">
+
+        <section class="main-about-page">
+
+            <!-- TOP PART -->
+            <section class="main-about-page-top">
+
+                <article class="main-about-page-top-left">
                     <h2>Who we are!</h2>
                     <p>At Tamion, we are passionate travelers dedicated to creating unforgettable journeys. With a deep understanding of destinations, cultures, and traveler needs, we specialize in designing seamless and personalized travel experiences. Whether it’s a relaxing getaway, an adventurous escape, or a business trip, our team ensures every detail is carefully planned so you can travel with confidence and ease.</p>
-                </div>
-                <div class="main-about-page-top-right">
+                </article>
+
+                <figure class="main-about-page-top-right">
                     <img src="../images/who-we-are.jpg" alt="A group of people">
-                </div>
-            </div>
-            <div class="main-about-page-bottom">
-                <div class="main-about-page-bottom-left">
+                </figure>
+
+            </section>
+
+            <!-- BOTTOM PART -->
+            <section class="main-about-page-bottom">
+
+                <figure class="main-about-page-bottom-left">
                     <img src="../images/about-us-people2.jpg" alt="photo of people in about us page">
-                </div>
-                <div class="main-about-page-bottom-right">
+                </figure>
+
+                <article class="main-about-page-bottom-right">
                     <h2>Our mission!</h2>
                     <p>Our mission at Tamion is to inspire and connect people through travel. We strive to provide exceptional service, tailored itineraries, and authentic experiences that go beyond expectations. By combining expertise, innovation, and a customer-first approach, we aim to turn every trip into a meaningful and memorable journey.</p>
-                </div>
-            </div>
-        </div>
-        <a href="#top"><img src="../images/top.png" class="back-to-top" alt="back to top button"></a> 
+                </article>
+
+            </section>
+
+        </section>
+
+        <a href="#top">
+            <img src="../images/top.png" class="back-to-top" alt="back to top button">
+        </a> 
+
     </main>
 
-    <!-- FOOTER SECTION -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <small>Copyright &copy; 2026 Tammy &amp; Ioannis.</small>
