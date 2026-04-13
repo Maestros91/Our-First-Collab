@@ -443,11 +443,11 @@ main {
 .contact-main { /* MAIN CONTAINER FOR WHOLE PAGE */
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 5px;
     padding: 0;
     width: 100%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 10px auto;
     align-items: stretch;
     overflow: hidden; 
 }
@@ -674,6 +674,9 @@ input {
     cursor: pointer;
     transition: 0.3s;
     margin-top: 20px;
+}
+.sign-up-card article {
+    align-items: center;
 }
 
 #card-signup {
